@@ -5,8 +5,175 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  
+   <meta charset="utf-8"/>
+        <title>Metronic "Aironepage" Frontend Freebie</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="" name="description"/>
+        <meta content="" name="author"/>
+
+        <!-- GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- PAGE LEVEL PLUGIN STYLES -->
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
+
+        <!-- THEME STYLES -->
+        <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico"/>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+       
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        
+       
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+        <script  src="https://code.jquery.com/jquery-3.2.1.js"  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="  crossorigin="anonymous"></script>
+  
 </head>
-<body>
+
+<style>
+  
+      body {
+    padding-top: 50px;
+}
+
+/** {
+       border: 1px solid black;
+}*/
+
+.navbar {
+    background-color: #ffffff;
+    border-color: transparent;
+    font-size: 14px}
+    .navbar a {
+        color: #aaaaaa;
+    }
+    
+.navbar .navbar-header {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #fff;
+    background-color: #eee;
+}
+ 
+.navbar-right {
+        text-align: center;
+       
+}
+
+form div {
+    background-color: transparent;
+    border-color: transparent;
+}
+    
+    
+#bground {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: -50px 0 0 0 ;
+}
+
+#bground ::before{
+    width: 100%;
+    height: 100%;
+    background-image:url('http://mblogthumb4.phinf.naver.net/20150420_31/ic_idol_1429461610781jlhj6_JPEG/1.jpg?type=w2');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    content: ' ';
+    
+}
+
+#welcome {
+    height: 100%;
+    width: 100%;
+    
+}
+    
+.button {
+    background-color: #FFF; /* Green */
+    border: 2px solid #B7DC92 ;
+    color: black;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 44%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    margin-top:10px; 
+    margin-bottom: 15%
+}
+
+ 
+   
+</style>
+
+ 
+<!-- ==============================
+    Project:        Metronic "Aironepage" Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4
+    Version:        1.0
+    Author:         KeenThemes
+    Primary use:    Corporate, Business Themes.
+    Email:          support@keenthemes.com
+    Follow:         http://www.twitter.com/keenthemes
+    Like:           http://www.facebook.com/keenthemes
+    Website:        http://www.keenthemes.com
+    Premium:        Premium Metronic Admin Theme: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+================================== -->
+
+  
+    <!-- END HEAD -->
+
+    <!-- BODY -->
+<body id="body" data-spy="scroll" data-target=".header">
+
+        <!--========== HEADER ==========-->
+        
+        <nav class="navbar navbar-fixed-top navbar-custom">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/" style=" color: #eee;">ART FLEA MARKET</a>
+                    </div>
+                   
+                </div>
+               
+                <div class="col-sm-4">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/letters/new">마이페이지</a></li>
+                        <li><a href="/letters/show">로그아웃</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </nav>
+        
+       
+        </header>
 
 <%= yield %>
 
