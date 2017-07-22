@@ -1,5 +1,8 @@
-class WorkController < ApplicationController
+class WorksController < ApplicationController
     
+    def index
+    end
+        
     def new
         
         @categories=["회화", "조각", "공예"]
@@ -24,4 +27,18 @@ class WorkController < ApplicationController
         @work.category=@checked_item
         
     end
+    
+    def show
+        
+    end
+    
+    def edit
+    end
+    
+    def update
+    end
+    
+    def destroy
+    end
+        
 end
