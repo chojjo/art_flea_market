@@ -1,0 +1,43 @@
+<div class="container">
+    <br>
+<h1>작품 마켓에 올리기</h1>
+
+<br>
+<br>
+<form action= "/work/create" method="post" enctype="multipart/form-data">
+
+        
+
+<h4><b>작품 유형</b></h4>
+
+ <div class = "widget">
+                <fieldset>
+                    <% @categories.each_with_index do |c, index| %>
+                        <label for="checkbox-<%=index %>"><%= c %></label>
+                        
+                            <input type="checkbox" name="checkbox-<%=index%>" value="<%= c %>" class="checkbox-<%=index%>"> &nbsp;
+                        
+                        
+                    <% end %>
+                    
+                </fieldset>  
+            </div>
+<br>
+<h4><b>작품 제목</b></b></h4>
+<input type="text" placeholder="작품 이름이 무엇인가요?" name="name" class="form-control"/></br/>
+
+<h4><b>작품 설명</b></b></b></h4>
+<input type="text" placeholder="작품 설명을 입력해주세요" name="description" class="form-control"/></br/>
+
+<h4><b>전시 장소</b></b></h4>
+<input type="text" placeholder="어디에서 이 작품을 실물로 볼 수 있나요?" name="location" class="form-control"/></br/>
+
+<h4><b>희망 시작가</b></h4>
+<input type="number" placeholder="희망 시작가를 입력해주세요" name="price" class="form-control" min="1" max="5"/></br/>
+
+<br>
+<br>
+<button  type="submit" class="button" >올리기</button>
+
+</form>
+</div>
